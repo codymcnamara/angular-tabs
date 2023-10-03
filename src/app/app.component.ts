@@ -14,6 +14,12 @@ export class AppComponent {
     this.tabItems = items;
     this.activeItem = items[0];
   }
+
+  onChangeActive(tab: Item) {
+    // alert(tab.label);
+    // let newActiveTab = items.find(item => item === tab);
+    this.activeItem = tab;
+  }
 }
 
 /*

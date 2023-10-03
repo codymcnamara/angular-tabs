@@ -1,1 +1,1 @@
-<p>tab works!</p>
+<p *ngIf="tab" (click)="changeActive.emit(tab)">{{ tab.label }}</p>

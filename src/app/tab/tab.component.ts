@@ -4,9 +4,9 @@ import { Item } from '../tabdata';
 @Component({
   selector: 'app-tab',
   templateUrl: './tab.component.html',
-  styleUrls: ['./tab.component.css']
+  styleUrls: ['./tab.component.css'],
 })
 export class TabComponent {
   @Input() tab: Item | undefined;
-
+  @Output() changeActive = new EventEmitter();
 }
