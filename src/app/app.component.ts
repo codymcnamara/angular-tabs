@@ -16,8 +16,6 @@ export class AppComponent {
   }
 
   onChangeActive(tab: Item) {
-    // alert(tab.label);
-    // let newActiveTab = items.find(item => item === tab);
     this.activeItem = tab;
   }
 }

@@ -1,1 +1,7 @@
-<p *ngIf="tab" (click)="changeActive.emit(tab)">{{ tab.label }}</p>
+<p
+  *ngIf="tab"
+  (click)="changeActive.emit(tab)"
+  [ngClass]="{ active: isActive }"
+>
+  {{ tab.label }}
+</p>

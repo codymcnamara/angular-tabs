@@ -4,6 +4,7 @@
   [tab]="tab"
   *ngFor="let tab of tabItems"
   (changeActive)="onChangeActive($event)"
+  [isActive]="tab === activeItem"
 ></app-tab>
 
 <div>{{ activeItem.panel }}</div>
